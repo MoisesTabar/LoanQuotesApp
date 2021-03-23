@@ -3,7 +3,7 @@ import Error from './Error';
 import { budgetHelper } from '../helpers/budget';
 
 function Form(props){
-    const { cuantity, saveCuantity, date, saveDate, total, saveTotal } = props;
+    const { cuantity, saveCuantity, date, saveDate, total, saveTotal, setLoading } = props;
     const [ error, SetError ] = useState(false);
 
     /**
@@ -21,9 +21,15 @@ function Form(props){
         //if the user reverts the error set the error state to false
         SetError(false);
 
+        //initialize the spinner
+        setLoading(true)
         //calculation
-        const total = budgetHelper(cuantity, date);
-        saveTotal(total);
+        setTimeout(() => {
+            const total = budgetHelper(cuantity, date);
+            saveTotal(total);
+            
+            setLoading(false);
+        }, 3000)
     }
 
     return(

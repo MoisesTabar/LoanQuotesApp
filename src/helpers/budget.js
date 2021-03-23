@@ -1,8 +1,6 @@
-
-
 export function budgetHelper(cuantity, date){
     let totalCuantity;
-    let totalDate;
+    let totalDate = 0;
 
     //first calculate the cuantity quotes
     if(cuantity <= 1000){
@@ -23,13 +21,13 @@ export function budgetHelper(cuantity, date){
             totalDate = cuantity * .05;
             break;
         case 6: 
-            totalCuantity = cuantity * .10;
+            totalDate = cuantity * .10;
             break;
         case 12: 
-            totalCuantity = cuantity * .015;
+            totalDate = cuantity * .015;
             break;
         case 24:
-            totalCuantity = cuantity * .020;
+            totalDate = cuantity * .020;
             break;
         default:
             break;
