@@ -5,12 +5,12 @@ function Form(){
         <div className="form-container">
             <form className="form">
 
-                <p className="subtitle is-5">Quantity</p>
+                <p id="subtitle" className="subtitle is-5">Quantity</p>
                 <div className="control">
                     <input className="input is-rounded" type="number" placeholder="Example: 3000" />
                 </div>
 
-                <p className="subtitle is-5">Date to pay</p>
+                <p id="subtitle" className="subtitle is-5">Date to pay</p>
                 <div className="select is-rounded">
                     <select>
                         <option value="">Select</option>

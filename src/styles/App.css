@@ -9,24 +9,37 @@
   flex-direction: column;
 }
 
-.subtitle{
-  margin-top: 5px;
+#subtitle{
+  margin-top: 3px;
   text-align: center;
 }
 
 input{
-  width: 18rem;
+  width: 25rem;
 }
 select{
-  width: 16rem;
+  width: 17rem;
 }
-button{
-  margin-top: 5px;
+.select, .input{
+  margin-bottom: 15px;
 }
-
-
+.button{
+  margin-bottom: 15px;
+}
 .button:hover{
   cursor: pointer;
+}
+
+.footer-container{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: auto;
+  height: 50px;
+  background-color: #282C34;
+}
+footer{
+  color: white;
 }
 
 
@@ -34,7 +47,7 @@ button{
   .input{
     width: 9rem;
   }
-  .select{
+  .select, select{
     width: 9rem;
   }
 }
