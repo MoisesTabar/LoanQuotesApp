@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  padding: 36px;
 }
 
 .form{
@@ -9,34 +8,37 @@
   flex-direction: column;
 }
 
+#header{
+  margin-top: 55px;
+  text-align: center;
+}
 #subtitle{
   margin-top: 3px;
   text-align: center;
 }
-
-input{
-  width: 25rem;
+.input.is-rounded{
+  width: 30rem;
 }
-select{
-  width: 17rem;
+.select select{
+  width: 30rem;
 }
 .select, .input{
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
+
 .button{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .button:hover{
   cursor: pointer;
 }
 
 .footer-container{
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  width: auto;
-  height: 50px;
+  width: 100%;
+  height: 35px;
   background-color: #282C34;
+  bottom: 0;
+  position: absolute;
 }
 footer{
   color: white;
@@ -44,10 +46,10 @@ footer{
 
 
 @media (max-width: 1024px){
-  .input{
-    width: 9rem;
+  .input.is-rounded{
+    width: 13rem;
   }
   .select, select{
-    width: 9rem;
+    width: 11rem;
   }
 }
